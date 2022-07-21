@@ -193,14 +193,24 @@
   (interactive)
   (load-theme 'doom-one))
 
+(defun org-roam-add-tag ()
+  (interactive)
+  (end-of-line)
+  (if (equal (string (preceding-char)) ":")
+      (insert ":")
+    (insert "::"))
+  (backward-char))
+
 (add-hook 'org-mode-hook
           (lambda()
+            (local-set-key (kbd "C-t") 'org-roam-add-tag)
             (local-set-key (kbd "M-*") 'org-mark-ring-goto)
             (local-set-key (kbd "C-c C-j") 'org-open-at-point)
             (local-set-key (kbd "C-x 4 C-c C-j") 'org-open-link-in-other-window)
             (local-set-key (kbd "C-c <C-return>") 'org-meta-return-with-store-link)))
 
 (org-roam-db-autosync-mode)
+
 
 ;; roam-ui
 (use-package! websocket
