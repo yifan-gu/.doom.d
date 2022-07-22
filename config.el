@@ -198,7 +198,7 @@
   (end-of-line)
   (if (equal (string (preceding-char)) ":")
       (insert ":")
-    (insert "::"))
+    (insert " ::"))
   (backward-char))
 
 (add-hook 'org-mode-hook
