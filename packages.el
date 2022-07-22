@@ -49,3 +49,7 @@
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
 (package! org-roam-ui)
+(package! buffer-move
+  :recipe (:local-repo "~/.doom.d/additional-packages"))
+(package! org-bullets
+  :recipe (:local-repo "~/.doom.d/additional-packages"))

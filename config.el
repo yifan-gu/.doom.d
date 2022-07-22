@@ -207,10 +207,14 @@
             (local-set-key (kbd "M-*") 'org-mark-ring-goto)
             (local-set-key (kbd "C-c C-j") 'org-open-at-point)
             (local-set-key (kbd "C-x 4 C-c C-j") 'org-open-link-in-other-window)
-            (local-set-key (kbd "C-c <C-return>") 'org-meta-return-with-store-link)))
+            (local-set-key (kbd "C-c <C-return>") 'org-meta-return-with-store-link)
+            (load-theme 'org-leuven)))
 
 (org-roam-db-autosync-mode)
 
+(require 'org-bullets)
+(setq org-bullets-bullet-list '(" " " " " " " " " "))
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 ;; roam-ui
 (use-package! websocket
@@ -233,7 +237,6 @@
       deft-default-extension "org"
       deft-use-filter-string-for-filename t
       deft-recursive t)
-
 
 ;; TODO
 ;; highlight, grammar check
