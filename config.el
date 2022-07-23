@@ -149,6 +149,13 @@
 ;;(define-key global-map (kbd "C-c SPC") 'avy-goto-char)
 (global-set-key (kbd "C-c SPC") 'avy-goto-char)
 
+;; Go imports
+(after! go-mode
+  (setq gofmt-command "goimports")
+  (add-hook 'go-mode-hook
+            (lambda ()
+              (add-hook 'after-save-hook 'gofmt nil 'make-it-local))))
+
 
 ;;
 ;; ==== lang ====
