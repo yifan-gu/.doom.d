@@ -238,7 +238,10 @@
       deft-use-filter-string-for-filename t
       deft-recursive t)
 
+;; Partially fix Chinese line wrapping
+(setq word-wrap-by-category t)
+
 ;; TODO
 ;; highlight, grammar check
 ;; jsonnet?
-;;
+;; Remap M-n and M-p for markdown
