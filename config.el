@@ -133,7 +133,7 @@
 (global-set-key (kbd "C-e") 'move-end-of-line)
 
 ;; disable smartparens mode
-(remove-hook 'doom-first-buffer-hook #'smartparens-global-mode)
+;;(remove-hook 'doom-first-buffer-hook #'smartparens-global-mode)
 
 ;; open recentf in new window
 (defun open-recentf-in-new-window ()
