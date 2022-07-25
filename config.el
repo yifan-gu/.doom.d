@@ -143,7 +143,19 @@
   (other-window 1)
   (recentf-open-files))
 
+(defun split-window-horizontally-move-cursor ()
+  (interactive)
+  (split-window-horizontally)
+  (other-window 1))
+
+(defun split-window-vertically-move-cursor ()
+  (interactive)
+  (split-window-vertically)
+  (other-window 1))
+
 (global-set-key (kbd "C-x 4 C-r") 'open-recentf-in-new-window)
+(global-set-key (kbd "C-x 3") 'split-window-horizontally-move-cursor)
+(global-set-key (kbd "C-x 2") 'split-window-vertically-move-cursor)
 
 ;; avy jump
 ;;(define-key global-map (kbd "C-c SPC") 'avy-goto-char)
