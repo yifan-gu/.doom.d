@@ -140,7 +140,7 @@ more...")
       (marked-line '(:foreground "#AA0000" :background "#FFAAAA"))
       (match '(:weight bold :background "#FFFF00")) ; occur patterns + match in helm for files + match in Org files.
       (ol1 `(,@(org-leuven-scale-font org-leuven-scale-outline-headlines 1.3) :family "Songti SC" :weight bold :foreground "#3C3C3C"));; :background "#F0F0F0"))
-      (ol2 '(:height 1.0 :weight bold :overline "#123555" :foreground "#123555" :background "#E5F4FB"))
+      (ol2 '(:height 1.0 :weight bold :foreground "#123555" :background "#E5F4FB"))
       (ol3 '(:height 1.0 :weight bold :foreground "#005522" :background "#EFFFEF"))
       (ol4 '(:height 1.0 :weight bold :slant normal :foreground "#EA6300"))
       (ol5 '(:height 1.0 :weight bold :slant normal :foreground "#E3258D"))
