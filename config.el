@@ -95,6 +95,8 @@
 (global-set-key "\M-h" 'windmove-left)
 (global-set-key "\M-l" 'windmove-right)
 
+(use-package! buffer-move)
+
 (global-set-key "\M-\S-k" 'buf-move-up)
 (global-set-key "\M-\S-j" 'buf-move-down)
 (global-set-key "\M-\S-h" 'buf-move-left)

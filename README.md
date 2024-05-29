@@ -8,5 +8,5 @@ See the [doom emacs doc](https://github.com/doomemacs/doomemacs/blob/master/docs
 ```
 brew tap railwaycat/emacsmacport
 brew install emacs-mac --with-modules
-ln -s /opt/homebrew/Cellar/emacs-mac/emacs-28.2-mac-9.1/Emacs.app /Applications/Emacs.app
+ln -s /opt/homebrew/opt/emacs-mac/Emacs.app /Applications/Emacs.app
 ```
