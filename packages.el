@@ -53,3 +53,5 @@
   :recipe (:local-repo "~/.doom.d/additional-packages"))
 (package! org-bullets
   :recipe (:local-repo "~/.doom.d/additional-packages"))
+(package! ag
+  :recipe (:local-repo "~/.doom.d/additional-packages"))

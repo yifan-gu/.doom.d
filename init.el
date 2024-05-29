@@ -72,6 +72,7 @@
        ;;undo              ; persistent, smarter undo for your inevitable mistakes
        vc                ; version-control and Emacs, sitting in a tree
        buffer-move       ; buffer-move
+       ag                ; ag
 
        :term
        eshell            ; the elisp shell that works everywhere
