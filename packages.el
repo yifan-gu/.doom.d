@@ -60,3 +60,5 @@
 (package! ag
   :recipe (:local-repo "~/.doom.d/additional-packages"))
 (package! emacsql-sqlite3)
+
+(package! arduino-mode)
