@@ -233,7 +233,7 @@
             (local-set-key (kbd "C-c <C-return>") 'org-meta-return-with-store-link)
             (load-theme 'org-leuven)))
 
-(org-roam-db-autosync-mode)
+;;(org-roam-db-autosync-mode)
 
 (require 'org-bullets)
 (setq org-bullets-bullet-list '(" " " " " " " " " "))
@@ -268,3 +268,11 @@
 ;; highlight, grammar check
 ;; jsonnet?
 ;; Remap M-n and M-p for markdown
+
+;; Disable mac double tap zoom
+;;(global-set-key (kbd "<magnify-down>") 'ignore)
+;;(global-set-key (kbd "<magnify-up>") 'ignore)
+
+(add-hook! 'swift-mode-hook
+  (setq indent-tabs-mode nil
+        swift-indent-offset 4))

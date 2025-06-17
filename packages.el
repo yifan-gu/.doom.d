@@ -49,10 +49,12 @@
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
                                         ;(unpin! t)
 
-(package! org-roam
-  :recipe (:host github :repo "org-roam/org-roam"))
+;;(package! org-roam
+;;  :recipe (:host github :repo "org-roam/org-roam"
+;;           :branch "main")) ;; Make sure you're pulling the latest
 
-(package! org-roam-ui)
+
+;;(package! org-roam-ui)
 (package! buffer-move
   :recipe (:local-repo "~/.doom.d/additional-packages"))
 (package! org-bullets
@@ -62,3 +64,7 @@
 (package! emacsql-sqlite3)
 
 (package! arduino-mode)
+
+(package! swift-mode)
+
+(package! ws-butler :recipe (:host github :repo "lewang/ws-butler"))
